@@ -1,52 +1,50 @@
 # Math Rush: Endless Run
 
-An original, three-lane endless runner designed from a student idea for the Naches Learning Arcade. The graphics are drawn entirely in HTML5 Canvas with perspective-style 2.5D scenery. No third-party libraries, commercial artwork, or online services are required.
+**An original educational endless-running arcade game, based on a student idea for the Naches Learning Hub.**
 
-## Start playing
+Dash through three lanes, avoid crates, hanging barriers and trains, solve math checkpoints by choosing the correct lane, collect coins, and unlock cosmetic characters. The longer you run, the faster the game becomes. Features two math modes (grades 5–6 and grades 7–8), optional hints, personal records, and keyboard/touch controls.
 
-Open `hudsons_math_runner.html` in a modern browser (Chrome, Edge, Safari, or Firefox) or upload the file to a static site such as GitHub Pages. The game uses a portrait layout on desktop and mobile.
+The game uses original HTML5 Canvas perspective-style 2.5D graphics. No external libraries or commercial game art.
 
-- **Left/Right arrow** or **A/D**: change lanes
-- **Up arrow**, **W**, or **Space**: jump over crates
-- **Down arrow** or **S**: slide below overhead bars
-- **P** or **Esc**: pause (or resume)
-- **Touch**: swipe left/right/up/down, or use the visible game buttons
-- **Math**: move into the lane with the correct answer before the checkpoint; tapping an answer button also moves to its lane
-- **Hint**: tap "Show hint" to reveal a guided strategy while the math gate approaches
+## Publish with GitHub Pages
 
-## Features
+1. Create a **public** GitHub repository named `math-rush-endless-run` under `jkramer-cloud`.
+2. Upload this package's **`index.html`** to the **root** of the new repository (plus README and optionally the previews).
+3. Under **Settings → Pages**, set **Deploy from a branch**, branch **main**, folder **/(root)** and save.
+4. After GitHub Pages deploys, confirm the game starts at **https://jkramer-cloud.github.io/math-rush-endless-run/**.
+5. Only then publish the companion **Naches Learning Hub v31.21** update; its card points to this URL.
 
-- The goal is to run farther, with speed increasing steadily (up to a cap).
-- Three lane obstacles: low crates (jump), hanging bars (slide), and trains (avoid by switching lanes).
-- Math gates show three possible numeric answers. The correct response earns bonus points and starts/builds a correct-answer streak.
-- A wrong answer costs **two of the three health points**. Ordinary collisions cost one health point. The run ends at zero health. Collision immunity briefly prevents repeated obstacle hits, but not math penalties.
-- Two math pools: **grades 5–6** (operations, fractions, decimals, area, money) and **grades 7–8** (integers, percentages, algebra, ratios, exponents, and more).
-- Coins placed on the track, a wallet, and ten cosmetic characters with increasing coin costs.
-- Score, distance, health, coin collection, and math accuracy on the game-over screen.
-- The setting alternates between a colorful city and desert environment as the distance increases.
-- Sound effects are original synthesized tones and **off by default** so the game is classroom-friendly.
-- Local browser storage remembers coin balance, unlocked/selected character, grade-band choice, sound preference, and personal records.
+## Controls
 
-## Add to the Learning Hub
+- Left / Right or A / D: switch lanes.
+- Up / W / Space: jump over crates.
+- Down / S: slide under overhead barriers.
+- P / Escape: pause / resume.
+- Touch: swipe or tap the on-screen buttons.
+- Math checkpoints: move into the correct-answer lane before reaching the checkpoint. Answer buttons can also select a lane. Optional hints explain a strategy.
 
-Copy `hudsons_math_runner.html` into the same published folder as the Learning Hub HTML (or place it in a games folder and adjust the URL). For a simple entry, use:
+## Learning and gameplay
 
-```html
-<a href="hudsons_math_runner.html">Math Rush: Endless Run</a>
-```
+- **Grade 5–6:** arithmetic, fractions, decimals, area, money and missing numbers.
+- **Grade 7–8:** integers, percentages, algebra, ratios, exponents and more.
+- Correct math builds a streak and earns bonus points. A wrong math gate costs two of three health points; obstacles cost one.
+- Coins unlock ten **cosmetic** character designs. Character choice does not affect speed or math difficulty.
+- Endless distance challenge, increasing speed, city and desert scenery, records and math accuracy summary.
+- Sounds are original synthesized tones, **off by default** for classrooms.
+- Records, coin balance, purchases and settings are stored **locally in that browser**. No student logins or leaderboard.
 
-Suggested Learning Hub listing:
+## GitHub repository description
 
-- **Name:** Math Rush: Endless Run
-- **Category:** Math / Arcade / Endless Runner
-- **Description:** Dodge trains, jump over crates, slide under barriers, collect coins, and solve math checkpoints by choosing the correct lane. Run farther to go faster, beat your record, and unlock new characters.
-- **Grades:** 5–8
+Race through an endless 3-lane runner, dodge obstacles, solve math challenges, collect coins, and unlock characters in this educational arcade game.
 
-If your hub uses JavaScript-based game cards or routing, its code needs to be updated accordingly; this project does **not** modify any existing Hub files by itself.
+## Learning Hub card
 
-## Important design notes
+**Title:** Math Rush: Endless Run
 
-- The prototype uses 2.5D canvas perspective, **not** an actual 3D game engine or imported Subway Surfers artwork.
-- Progress is saved per browser profile/device, not per student account. Clearing site data resets local progress.
-- There is no server-side leaderboard, instructor dashboard, or cloud synchronization yet.
-- This is an initial functional prototype intended for student testing and iteration. Review difficulty, math accuracy, readability, and device performance before classroom deployment.
+**Category:** Math · Arcade Challenge
+
+**Description:** Run, jump, slide, and dodge obstacles in an endless arcade adventure! Solve math problems by choosing the correct lane, collect coins, and unlock new characters. How far can you go?
+
+**Grades:** 5–8 | **Mode:** Solo · Keyboard or touchscreen
+
+This game was created from an original student concept for classroom use. It is not endorsed by or affiliated with the creators of Subway Surfers.
