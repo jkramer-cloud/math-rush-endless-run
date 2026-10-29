@@ -1,50 +1,26 @@
-# Math Rush: Endless Run
+# Math Rush: Endless Run — Version 1.1
 
-**An original educational endless-running arcade game, based on a student idea for the Naches Learning Hub.**
+An original 2.5D educational endless runner inspired by a Naches Learning Arcade student's idea. Choose math-answer lanes, dodge crates, overhead beams and trains, collect coins, and keep going as the speed increases.
 
-Dash through three lanes, avoid crates, hanging barriers and trains, solve math checkpoints by choosing the correct lane, collect coins, and unlock cosmetic characters. The longer you run, the faster the game becomes. Features two math modes (grades 5–6 and grades 7–8), optional hints, personal records, and keyboard/touch controls.
+## Release 1.1 — Gameplay Repair and Style Studio
 
-The game uses original HTML5 Canvas perspective-style 2.5D graphics. No external libraries or commercial game art.
+- **Coin pickups repaired:** coins are collected when the runner reaches their actual on-screen depth; collection increments the run coin count and saved wallet. Coins appear singly or in pairs with longer breaks between groups.
+- **Obstacles repaired:** trains require a lane switch, crates can be jumped, and overhead beams can be slid beneath. Three hearts; hitting obstacles reduces health and reaching zero opens the **RUN OVER** result screen.
+- **Five changing areas:** City Streets, Desert Canyon, Forest Trail, Snowy Summit, Neon Night. A new zone arrives approximately every 390 meters and cycles endlessly.
+- **Character & Style Studio:** ten runners; six outfits; five headwear styles (including default); five handheld prop choices; four boards; and four trails. Purchases consume game coins and persist in local browser storage. All upgrades are cosmetic.
+- Grade 5–6 and grade 7–8 math questions, pause, hints, run results and records remain available.
 
-## Publish with GitHub Pages
+## Publish to GitHub Pages
 
-1. Create a **public** GitHub repository named `math-rush-endless-run` under `jkramer-cloud`.
-2. Upload this package's **`index.html`** to the **root** of the new repository (plus README and optionally the previews).
-3. Under **Settings → Pages**, set **Deploy from a branch**, branch **main**, folder **/(root)** and save.
-4. After GitHub Pages deploys, confirm the game starts at **https://jkramer-cloud.github.io/math-rush-endless-run/**.
-5. Only then publish the companion **Naches Learning Hub v31.21** update; its card points to this URL.
+1. Open the existing public GitHub repository `jkramer-cloud/math-rush-endless-run`.
+2. Upload **all files from this folder to the repository root**. Replace the existing `index.html` and `README.md` (and any named preview images). The essential updated file is `index.html`.
+3. Make sure GitHub Pages uses `main` → `/(root)`, then open https://jkramer-cloud.github.io/math-rush-endless-run/ .
+4. On Chrome, use Ctrl+Shift+R if your browser still shows the old version.
 
-## Controls
+**Learning Hub:** The game address is unchanged, so the game repair goes live when this repository deploys. A separate optional Learning Hub v31.23 package updates the Hub card description to mention the Style Studio.
 
-- Left / Right or A / D: switch lanes.
-- Up / W / Space: jump over crates.
-- Down / S: slide under overhead barriers.
-- P / Escape: pause / resume.
-- Touch: swipe or tap the on-screen buttons.
-- Math checkpoints: move into the correct-answer lane before reaching the checkpoint. Answer buttons can also select a lane. Optional hints explain a strategy.
+## Keyboard / touch controls
 
-## Learning and gameplay
+Left/Right or A/D: switch lanes. Up/W/Space: jump. Down/S: slide. P/Escape: pause. On touchscreens, swipe or use the visible action buttons. Choose a math answer by entering its lane before the gate.
 
-- **Grade 5–6:** arithmetic, fractions, decimals, area, money and missing numbers.
-- **Grade 7–8:** integers, percentages, algebra, ratios, exponents and more.
-- Correct math builds a streak and earns bonus points. A wrong math gate costs two of three health points; obstacles cost one.
-- Coins unlock ten **cosmetic** character designs. Character choice does not affect speed or math difficulty.
-- Endless distance challenge, increasing speed, city and desert scenery, records and math accuracy summary.
-- Sounds are original synthesized tones, **off by default** for classrooms.
-- Records, coin balance, purchases and settings are stored **locally in that browser**. No student logins or leaderboard.
-
-## GitHub repository description
-
-Race through an endless 3-lane runner, dodge obstacles, solve math challenges, collect coins, and unlock characters in this educational arcade game.
-
-## Learning Hub card
-
-**Title:** Math Rush: Endless Run
-
-**Category:** Math · Arcade Challenge
-
-**Description:** Run, jump, slide, and dodge obstacles in an endless arcade adventure! Solve math problems by choosing the correct lane, collect coins, and unlock new characters. How far can you go?
-
-**Grades:** 5–8 | **Mode:** Solo · Keyboard or touchscreen
-
-This game was created from an original student concept for classroom use. It is not endorsed by or affiliated with the creators of Subway Surfers.
+This original game is not affiliated with Subway Surfers. It is built as one self-contained HTML file, with no additional runtime libraries or account sign-in. High scores, coins and outfits are stored on the device in browser localStorage; changing devices or clearing browser data may clear progress.
